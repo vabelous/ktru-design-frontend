@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,16 +16,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@ktru-services/*": ["app/common/services/*"],
+      "@ktru-pipes/*": ["app/common/pipes/*"],
+      "@ktru-modals/*": ["app/common/modals/*"],
+      "@ktru-models/*": ["app/common/models/*"],
+      "@ktru-modules/*": ["app/common/modules/*"],
+      "@ktru-factories/*": ["app/common/factories/*"],
+      "@ktru-directives/*": ["app/common/directives/*"],
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
   },
-  "paths": {
-    "@ktru-services/*": ["app/common/services/*"],
-    "@ktru-pipes/*": ["app/common/pipes/*"],
-    "@ktru-modals/*": ["app/common/modals/*"],
-    "@ktru-models/*": ["app/common/models/*"],
-}
+
 }

@@ -1,0 +1,41 @@
+{
+  "header": {
+    "buttons": {
+      "login": "Войти в сервисы"
+    }
+
+  },
+  "login": {
+    "catalogicus": "Каталогикус",
+    "actionLogin": "Войдите в свою учетную запись",
+    "actionRegister": "Создать учетную запись",
+    "actionRestore": "Восстановоить пароль к учетной записи",
+    "notRegisteredBefore": "Еще не зарегистрированы?",
+    "rememberPassword": "Вспомнили пароль, проверим?",
+    "alreadyHaveAccount": "У вас уже есть учетная запись?",
+    "forgotPassword": "Забыли пароль?",
+    "agreementConditions": "Нажимая на кнопку «Зарегистрироваться», вы подтверждаете согласие с <a href=\"/docs/terms-of-use\" target=\"_blank\" style=\"text-decoration-line: none;\">Условиями использования</a><span>, </span><a href=\"/docs/privacy-policy\" target=\"_blank\" style=\"text-decoration-line: none;\">Политикой конфиденциальности </a><span>Системы «Каталогикус» и выражаете свое желание присоединиться к действующей редакции и заключить </span><a href=\"/docs/agreements/using\" target=\"_blank\" style=\"text-decoration-line: none;\">Договор </a><span>на использование сервисов и базы данных «Каталогикус», а также даете согласие на обработку, хранение и распространение персональных данных.</span>",
+    "placeholders": {
+      "email": "Адрес электронной почты",
+      "password": "Пароль",
+      "firstName": "Имя",
+      "lastName": "Фамилия"
+    },
+    "buttons": {
+      "login": "Войти",
+      "register": "Зарегистрировать",
+      "restore": "Отправить ссылку для сброса пароля"
+    },
+    "links":{
+      "forgotPassword": "Восстановить пароль",
+      "createAccount": "Создать учетную запись",
+      "backToLogin": "Вернуться к авторизации"
+    },
+    "errors": {
+      "information": "Данные проверяются автоматически!",
+      "template": "Пожалуйста введите корректное значение!",
+      "required": "Поле обязательно для заполнения!",
+      "maxLength": "Превышена максимальная длина!"
+    }
+  }
+}

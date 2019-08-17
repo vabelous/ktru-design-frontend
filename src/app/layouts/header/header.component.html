@@ -1,0 +1,21 @@
+<mat-toolbar class="mat-elevation-z4">
+  <mat-toolbar-row>
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlex>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="navbar-toggle-button" mat-button (click)='toggleLeftSideNav($event)'>
+        <mat-icon aria-label="Example icon-button with a heart icon">dehaze</mat-icon>
+      </button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="navbar-toggle-button" mat-button routerLink="/" routerLinkActive="active">
+          <mat-icon class="_ga-navbar_logo_icon" svgIcon='angular'></mat-icon>
+      </button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <div fxFlex></div>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button class="login-button" mat-button (click)='toggleRightSideNav($event)'>
+        <span>{{ 'header.buttons.login' | translate }}</span>
+      </button>
+      <mat-divider [vertical]="true"></mat-divider>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

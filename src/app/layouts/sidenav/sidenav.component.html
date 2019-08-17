@@ -1,0 +1,38 @@
+<div class="ga-navbar_header" fxLayout="row" fxLayoutAlign="space-between center">
+  <mat-icon class="_ga-navbar_logo_icon" svgIcon='angular'></mat-icon>
+  <div class="ga-navbar_logo_text">MTS</div>
+  <div>
+    <button mat-icon-button (click)="toggleLeftSidenav($event)">
+      <mat-icon aria-label="Example icon-button with a heart icon">arrow_back</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="ga-navbar_content" fxLayout="column">
+  <div class="ga-navbar_content_user" fxLayout="column" fxLayoutAlign="center center">
+    <div class="ga-navbar_content_user_name">Анна Петрова</div>
+    <div class="ga-navbar_content_user_email">a.petrova@mts.ru</div>
+    <div class="ga-navbar_content_user_avatar_container">
+      <img class="ga-navbar_content_user_avatar" src="assets/images/users/user_01.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="ga-navbar_content_menu" fxLayout="column">
+    <div class="ga-navbar_content_menu_container">
+      <section class="ga-navbar_content_menu_container_section">
+        <div class="ga-navbar_content_menu_container_section_group_title" flLayout="row" fxLayoutAlign="start center">
+          <span>Главное меню</span>
+        </div>
+        <mat-nav-list role="navigation" class="ga-navbar_content_menu_container_section_group_items">
+          <a mat-list-item routerLink="/users/list" routerLinkActive="active" class="ga-navbar_content_menu_container_section_group_items_nav_link">
+            <mat-icon class="ga-navbar_content_menu_container_section_group_items_nav_icon" svgIcon='user'></mat-icon>
+            <span>Пользователи</span>
+          </a>
+          <a mat-list-item routerLink="/users/tree" routerLinkActive="active" class="ga-navbar_content_menu_container_section_group_items_nav_link">
+            <mat-icon class="ga-navbar_content_menu_container_section_group_items_nav_icon" svgIcon='users'></mat-icon>
+            <span>Иерархия</span>
+          </a>
+        </mat-nav-list>
+      </section>
+    </div>
+  </div>
+</div>

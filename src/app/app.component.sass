@@ -1,0 +1,17 @@
+@import '../assets/styles/variables.sass'
+
+mat-sidenav
+  min-width: 300px
+  background-color: $white
+
+@media screen and (max-width: 599px)
+  .main-sidenav-container
+    min-width: $width
+    width: 100%
+    height: calc(100vh - 56px)
+
+@media screen and (min-width: 600px)
+  .main-sidenav-container
+    min-width: $width
+    width: 100%
+    height: calc(100vh - 64px)
