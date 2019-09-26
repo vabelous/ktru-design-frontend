@@ -1,3 +1,4 @@
+import { FcAuthorizationService } from './authorization/fc-authorization.service';
 import { UiService } from './common/services/ui.service';
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -18,7 +19,10 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('sidenav_left', {static: false}) private sidenavLeft: MatSidenav;
   @ViewChild('sidenav_right', {static: false}) private sidenavRight: MatSidenav;
 
-  constructor(private uiService: UiService) {}
+  constructor(private uiService: UiService, fcAuthorizationService: FcAuthorizationService) {
+    fcAuthorizationService.getAuthorizationActionsFields();
+  }
+
   ngAfterViewInit(): void {
     this.leftSideNavStatusSub = this.uiService.getLeftSideNavStatus()
       .subscribe( _ => this.toggleLeftSideNav());

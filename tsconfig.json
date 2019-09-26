@@ -26,6 +26,8 @@
       "@ktru-modules/*": ["app/common/modules/*"],
       "@ktru-factories/*": ["app/common/factories/*"],
       "@ktru-directives/*": ["app/common/directives/*"],
+      "@ktru-masks/*": ["app/common/masks/*"],
+      "@ktru-validators/*": ["app/common/validators/*"],
     }
   },
   "angularCompilerOptions": {

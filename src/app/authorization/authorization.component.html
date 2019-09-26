@@ -1,0 +1,15 @@
+<div>
+<form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+  <div formArrayName="actions" *ngFor="let fc of actionControls.controls; let i = index;">
+    <mat-form-field>
+      <input type="text"
+      matInput
+      [placeholder]="fc.placeholder"
+      [formControl]="fc"
+      >
+    </mat-form-field>
+  </div>
+
+</form>
+
+</div>

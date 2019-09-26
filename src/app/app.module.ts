@@ -12,6 +12,8 @@ import { reducers, metaReducers } from './reducers';
 import { SvgIconsModule } from '@ktru-modules/svg-icon.module';
 import { LayoutsModule } from './layouts/layouts.module';
 import { AppMaterialModule } from 'app/app-material.module';
+import { AuthorizationModule } from './authorization/authorization.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { AppMaterialModule } from 'app/app-material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     I18nModule,
+    AuthorizationModule,
+    ReactiveFormsModule,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {

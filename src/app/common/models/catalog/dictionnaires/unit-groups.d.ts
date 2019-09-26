@@ -6,7 +6,7 @@
  * @param title    			                      // Наименование
  *
  */
-export interface UnitGroupDTO {
+declare interface UnitGroupDTO {
   id: number;
   title: string;
 }
@@ -16,7 +16,7 @@ export interface UnitGroupDTO {
  * Массив записей
  *
  */
-export interface UnitGroupsDTO extends Array<UnitGroupDTO> {}
+declare interface UnitGroupsDTO extends Array<UnitGroupDTO> {}
 
 export const UNIT_GROUPS: UnitGroupsDTO = [
   {id: 1, title: 'Единицы длины'},
