@@ -48,6 +48,20 @@ declare interface AttributeGroupParentDTO {
 
 /**
  * Справочник «Группы атрибутов»
+ * Одна запись (короткая нотация)
+ *
+ * @param id                                  // Порядковый номер записи в БД
+ * @param title    			                      // Наименование
+ *
+ */
+declare interface AttributeGroupShortDTO {
+  id: number;
+  title: string;
+}
+
+
+/**
+ * Справочник «Группы атрибутов»
  * Результаты поиска
  * Одна запись
  *
