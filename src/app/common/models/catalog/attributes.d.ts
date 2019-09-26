@@ -12,7 +12,7 @@
  * @param modified_by				                  // Id пользователя выполнившего последнее обновление записи
  *
  */
-export interface AttributeDTO {
+declare interface AttributeDTO {
   id: number;
   alias: string;
   parent: string;
@@ -24,7 +24,7 @@ export interface AttributeDTO {
 }
 
 
-export enum ATTRIBUTE_VALUE_TYPES  {
+declare const enum ATTRIBUTE_VALUE_TYPES  {
   String = 'string',
   Number = 'number',
   Boolean = 'boolean',

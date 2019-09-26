@@ -1,5 +1,3 @@
-import { UnitGroupDTO } from '@ktru-models/index';
-
 /**
  * Справочник «Единицы измерения»
  * Одна запись
@@ -12,7 +10,7 @@ import { UnitGroupDTO } from '@ktru-models/index';
  * @param title				                        // Наименование
  *
  */
-export interface UnitDTO {
+declare interface UnitDTO {
   id: number;
   code: string;
   code_mark_international: string;
@@ -27,7 +25,7 @@ export interface UnitDTO {
  * Массив записей
  *
  */
-export interface UnitsDTO extends Array<UnitDTO> {}
+declare interface UnitsDTO extends Array<UnitDTO> {}
 
 /**
  * Справочник «Единицы измерения»
@@ -42,7 +40,7 @@ export interface UnitsDTO extends Array<UnitDTO> {}
  * @param title				                        // Наименование
  *
  */
-export interface UnitCUDTO {
+declare interface UnitCUDTO {
   id: number;
   code: string;
   code_mark_international: string;

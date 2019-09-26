@@ -1,4 +1,4 @@
-export interface InputMask {
+declare interface InputMask {
   mask: (string | RegExp)[];
   showMask?: boolean;
   keepCharPositions?: boolean;

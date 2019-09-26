@@ -12,7 +12,7 @@
  * @param modified_by				                  // Id пользователя выполнившего последнее обновление записи
  *
  */
-export interface AttributeGroupDTO {
+declare interface AttributeGroupDTO {
   id: number;
   alias: string;
   parent: AttributeGroupParentDTO;
@@ -28,7 +28,7 @@ export interface AttributeGroupDTO {
  * Массив записей
  *
  */
-export interface AttributeGroupsDTO extends Array<AttributeGroupDTO> {}
+declare interface AttributeGroupsDTO extends Array<AttributeGroupDTO> {}
 
 /**
  * Справочник «Группы атрибутов»
@@ -40,7 +40,7 @@ export interface AttributeGroupsDTO extends Array<AttributeGroupDTO> {}
  * @param title    			                      // Наименование
  *
  */
-export interface AttributeGroupParentDTO {
+declare interface AttributeGroupParentDTO {
   id: number;
   alias?: string;
   title: string;
@@ -61,7 +61,7 @@ export interface AttributeGroupParentDTO {
  * @param has_children    			              // Является родителем
  *
  */
-export interface AttributeGroupListItemDTO {
+declare interface AttributeGroupListItemDTO {
   id: number;
   id_path: string;
   alias: string;
@@ -78,4 +78,4 @@ export interface AttributeGroupListItemDTO {
  * Массив записей
  *
  */
-export interface AttributeGroupListItemsDTO extends Array<AttributeGroupListItemDTO> {}
+declare interface AttributeGroupListItemsDTO extends Array<AttributeGroupListItemDTO> {}

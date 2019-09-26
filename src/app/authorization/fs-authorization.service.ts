@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { ValidatorFn } from '@angular/forms';
 
 import { AuthorizationFields } from '@ktru-models/authorization.models';
-import { InputMask } from '@ktru-models/mask.models';
 
 import { emailValidator } from '@ktru-validators/email.validator';
 import { nameValidator } from '@ktru-validators/name.validator';

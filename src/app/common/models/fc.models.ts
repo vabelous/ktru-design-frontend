@@ -1,7 +1,5 @@
 import { ValidatorFn, FormControl, AbstractControl, AbstractControlOptions, AsyncValidatorFn, FormArray } from '@angular/forms';
 
-import { InputMask } from '@ktru-models/mask.models';
-import { AuthorizationFields } from '@ktru-models/authorization.models';
 
 export class ExtFormControl extends FormControl {
   mask?: InputMask;

@@ -1,5 +1,3 @@
-import { InputMask } from '@ktru-models/mask.models';
-
 export const INN_12DG_MASK: InputMask = {
   mask: [/\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/],
   showMask: true,
