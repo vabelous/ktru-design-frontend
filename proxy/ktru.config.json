@@ -1,0 +1,8 @@
+{
+  "/auth/*": {
+    "target": "https://design.ktru.info",
+    "secure": false,
+    "changeOrigin": true,
+    "cookieDomainRewrite": ""
+  }
+}
